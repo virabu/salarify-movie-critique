@@ -1,0 +1,61 @@
+.newMovieDiv {
+  min-width: 400px;
+  max-width: 700px;
+  text-align: left;
+}
+
+h3 {
+  background-color: #c0146c;
+  color: white;
+  padding: 8px 30px;
+  margin-bottom: 0;
+  
+}
+.inlineDiv {
+  display: inline-flex;
+}
+
+.blockDiv {
+  display: block;
+  justify-content: space-around;
+}
+
+form {
+  background-color: white;
+  color: grey;
+  padding: 30px;
+}
+
+label {
+  color: hsl(0, 0%, 25%);
+}
+
+input {
+  margin: 10px 20px 10px 0;
+  border: 1px solid hsl(0, 0%, 70%);
+  border-radius: 4px;
+  padding: 4px 10px;
+}
+
+.ratingsDiv {
+  width: 620px;
+  border-top: hsl(0, 0%, 70%) solid 1px;
+  border-bottom: hsl(0, 0%, 70%) solid 1px;
+  padding: 20px 0;
+  margin: 20px 0;
+}
+
+.addReviewButtonsDiv {
+  text-align: right;
+  margin-right: 20px;
+}
+
+.addReviewButtonsDiv > a {
+  color: grey;
+}
+
+.addReviewButtonsDiv > span {
+  color: #c0146c;
+  margin-left: 30px;
+  cursor: pointer;
+}
