@@ -7,7 +7,8 @@ const MovieList = ({movies, name}) => {
       {movies.map((movie) => (
         <div key={movie.id}>
           <Link to={`/movies/${movie.id}`}>
-            <h2>{ movie.name }</h2>
+            <img src={ movie.imgUrl }/>
+            <p>{ movie.name }</p>
             <p>{ movie.year }</p>
           </Link>
         </div>
