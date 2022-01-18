@@ -68,3 +68,44 @@ button {
   text-align: left;
   padding: 20px 30px;
 }
+
+.MovieDetailsRatingDiv {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+
+}
+
+.MovieDetailsOverallScoreCont {
+  max-width: 300px;
+  background-color: white;
+  border: 1px solid grey;
+  color: #c0146c;
+  padding: 10px 30px;
+  margin: 30px 0;
+  padding-bottom: 0px;
+  text-transform: uppercase;
+}
+
+.MovieDetailsOverallScoreCont > p {
+  font-size: 40px;
+  background-color: #c0146c;
+  color: white;
+  padding: 40px 20px;
+  margin: 40px -30px 0px 80px;
+  text-align: center;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+}
+
+.MovieDetailsButtons {
+  text-align: end;
+  margin-top: 20px;
+}
+
+.MovieDetailsButtons > span {
+  margin: 0 20px;
+  cursor: pointer;
+}
