@@ -1,15 +1,19 @@
 import { Link } from "react-router-dom";
 
-const MovieList = ({movies, name}) => {
+const MovieList = ({movies}) => {
   return (
     <div>
-      <h2>{ name }</h2>
       {movies.map((movie) => (
-        <div key={movie.id}>
+        <div className="MovieListCard" key={movie.id}>
           <Link to={`/movies/${movie.id}`}>
             <img className="image" src={ movie.imgUrl } alt="moviePic"/>
-            <p>{ movie.name }</p>
-            <p>{ movie.year }</p>
+            <div className="MovieListCardInfoDiv">
+              <p>{ movie.name }</p>
+              <div className="MovieListCardBottomDiv">
+                <p>{ movie.year }</p>
+                <p><i class="far fa-star"></i> { Math.floor((movie.ratings.directing + movie.ratings.acting + movie.ratings.costumeDesign + movie.ratings.editing + movie.ratings.music + movie.ratings.visualEffects + movie.ratings.screenplay)/7 )}</p>
+              </div>
+            </div>
           </Link>
         </div>
       ))}

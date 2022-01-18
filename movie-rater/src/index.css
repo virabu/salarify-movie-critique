@@ -6,9 +6,17 @@ body {
 
 nav {
   display: inline-flex;
-  width: 90%;
+  justify-content: space-between;
+  width: 100%;
   align-items: center;
   padding: 0px 20px;
+  background-color:#c0146c;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.navDivLeft {
+  display: inline-flex;
 }
 
 a {
@@ -17,19 +25,16 @@ a {
   text-decoration: none;
 }
 
-.navbar {
-  background-color:#c0146c;
-}
-
-.navbar > p {
+.navDivLeft > p {
   color: rgb(56, 54, 54);
   text-transform: uppercase;
-  margin-right: 30px;
+  margin: 0 30px;
 }
 
 .search {
   display: inline-flex;
   justify-content: flex-end;
+  margin-right: 20px;
 }
 
 input, button {
@@ -50,10 +55,43 @@ button {
 .main {
   background-color: black;
   color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.MovieListCard {
+  display: inline-flex;
+  margin: 50px 0 10px 0;
+  max-width: 360px;
+}
+
+.MovieListCard > img {
+  width: 100%;
 }
 
 .image {
   max-width: 300px;
+}
+
+.MovieListCardInfoDiv {
+  background-color: #c0146c;
+  padding: 2px 16px;
+  font-size: 14px;
+}
+
+.MovieListCardInfoDiv > p {
+  text-align: left;
+}
+
+.MovieListCardBottomDiv {
+  display: flex;
+  justify-content: space-between;
+}
+
+.MovieDetailsImage {
+  max-height: 400px;
 }
 
 .MovieDetailsTitle {

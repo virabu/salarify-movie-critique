@@ -12,7 +12,7 @@ const MovieDetails = () => {
       { error && <div>{ error }</div> }
       { movie && (
         <div className="MovieDetails">
-          <img className="image" src={ movie.imgUrl } alt="moviePic"/>
+          <img className="MovieDetailsImage" src={ movie.imgUrl } alt="moviePic"/>
           <div className="MovieDetailsTitle">
             <h1>{ movie.name }</h1>
             <h2>{ movie.year }</h2>
