@@ -23,7 +23,7 @@ const Add = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const movie = { title, year, director, stars, writers, imageUrl, review, ratDirecting,  ratActing, ratCostume, ratEditing, ratMusic, ratVisual, ratScreenplay }
+    const movie = { title, year, director, stars, writers, imageUrl, review, ratDirecting,  ratActing, ratCostume, ratEditing, ratMusic, ratVisual, ratScreenplay };
 
     setIsPending(true);
 
@@ -44,64 +44,71 @@ const Add = () => {
       <form onSubmit={handleSubmit}>
         <div className="inlineDiv">
           <div className="blockDiv">
-            <label>Title</label><br/>
+            <label for="title">Title</label><br/>
             <input style={{width: "280px"}} type="text" 
+            id="title"
             required
             value={title}
             placeholder="eg.: One Hundred and One Dalmatians"
             onChange={(e) => setTitle(e.target.value)}
             />
 
-            <label>Director</label><br/>
+            <label for="director">Director</label><br/>
             <input style={{width: "280px"}} type="text" 
+            id="director"
             required
             value={director}
             placeholder="eg.: Clyde Geronimi"
-            onChange={(e) => setTitle(e.target.value)}
+            onChange={(e) => setDirector(e.target.value)}
             />
 
-            <label>Writers</label><br/>
+            <label for="writers">Writers</label><br/>
             <input style={{width: "280px"}} type="text" 
+            id="writers"
             required
             value={writers}
             placeholder="eg.: Bill Peet, Dodie Smith"
-            onChange={(e) => setTitle(e.target.value)}
+            onChange={(e) => setWriters(e.target.value)}
             />
 
           </div>
           <div className="blockDiv">
-            <label>Year</label><br/>
+            <label for="year">Year</label><br/>
             <input style={{width: "280px"}} type="number" 
+            id="year"
             required
             value={year}
             placeholder="eg.: 1961"
-            onChange={(e) => setTitle(e.target.value)}
+            onChange={(e) => setYear(e.target.value)}
             />
 
-            <label>Stars</label><br/>
+            <label for="stars">Stars</label><br/>
             <input style={{width: "280px"}} type="text" 
+            id="stars"
             required
             value={stars}
             placeholder="eg.: Rod Taylor, Betty Lou Gerson, J. Pat O'Malley"
-            onChange={(e) => setTitle(e.target.value)}
+            onChange={(e) => setStars(e.target.value)}
             />
 
-            <label>Image URL</label><br/>
+            <label for="imageUrl">Image URL</label><br/>
             <input style={{width: "280px"}} type="url" 
+            id="imageUrl"
             required
             value={imageUrl}
             placeholder="eg.: https://thedisinsider.com/101-dalmatians.png"
-            onChange={(e) => setTitle(e.target.value)}
+            onChange={(e) => setImageUrl(e.target.value)}
             />
           </div>
         </div>
 
-        <br/><label>Review</label><br/>
+        <br/><label for="review">Review</label><br/>
         <input style={{width: "600px", height: "60px"}} type="text" 
+        id="review"
         required
         value={review}
         placeholder="eg.: When a litter of Dalmatian puppies are abducted..."
-        onChange={(e) => setTitle(e.target.value)}
+        onChange={(e) => setReview(e.target.value)}
         />
 
         <div className="ratingsDiv">
