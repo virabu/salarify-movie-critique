@@ -153,42 +153,42 @@
       }
     },
     {
-      "name": "csá4",
-      "year": "2000",
-      "director": "gdgdgdg",
-      "stars": "ggdgdg",
-      "writers": "gdgdgd",
-      "imgUrl": "https://i0.wp.com/thedisinsider.com/wp-content/uploads/2020/11/101-dalmatians.png?fit=3840%2C2160&ssl=1",
-      "review": "efef",
+      "name": "Fast & furious 9",
+      "year": "2021",
+      "director": "Justin Lin",
+      "stars": "Vin Diesel, Michelle Rodriguez, Jordana Brewster",
+      "writers": "Daniel Casey, Justin Lin, Alfredo Botello",
+      "imgUrl": "https://m.media-amazon.com/images/M/MV5BYzFiNjc0ODAtY2FkZS00MzQ5LTgxMmEtMmI0MTg3ZTU4ZjYwXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg",
+      "review": "Dom and the crew must take on an international terrorist who turns out to be Dom and Mia's estranged brother.",
       "ratings": {
-        "directing": "5",
-        "acting": "4",
-        "costumeDesign": "3",
+        "directing": "3",
+        "acting": "2",
+        "costumeDesign": "5",
         "editing": "2",
-        "music": "1",
-        "visualEffects": "2",
-        "screenplay": "3"
+        "music": "3",
+        "visualEffects": "3",
+        "screenplay": "2"
       },
-      "id": 9
+      "id": 10
     },
     {
-      "name": "Halálos9",
-      "year": "2021",
-      "director": "tzrezr",
-      "stars": "fgedfef",
-      "writers": "fefe",
-      "imgUrl": "https://media.port.hu/images/001/361/188.jpg",
-      "review": "fefef",
+      "name": "One Hundred and One Dalmatians",
+      "year": "1961",
+      "director": "Clyde Geronimi",
+      "stars": "Rod Taylor, Betty Lou Gerson, J. Pat O'Malley",
+      "writers": "Bill Peet",
+      "imgUrl": "https://kbimages1-a.akamaihd.net/7f0c07c5-f677-451c-b933-a747ee1b56a4/1200/1200/False/101-dalmatians-1.jpg",
+      "review": "When a litter of Dalmatian puppies are abducted by the minions of Cruella de Vil, the parents must find them before she uses them for a diabolical fashion statement.",
       "ratings": {
-        "directing": "1",
-        "acting": "1",
-        "costumeDesign": "1",
-        "editing": "2",
-        "music": "2",
-        "visualEffects": "1",
-        "screenplay": "1"
+        "directing": "5",
+        "acting": "5",
+        "costumeDesign": "5",
+        "editing": "4",
+        "music": "3",
+        "visualEffects": "4",
+        "screenplay": "4"
       },
-      "id": 12
+      "id": 11
     }
   ]
 }
