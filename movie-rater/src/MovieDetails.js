@@ -48,7 +48,7 @@ const MovieDetails = () => {
               </div>
             </div>
             <div className="MovieDetailsButtons">
-              <button onclick={handleClick}>Delete</button>
+              <button onClick={handleClick}>Delete</button>
               <button>Edit</button>
               <Link style={{color: "#c0146c"}} to="/">Close</Link>
             </div>
