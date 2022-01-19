@@ -1,10 +1,20 @@
-import { useParams } from "react-router-dom";
+import { useHistory, useParams } from "react-router-dom";
 import useFetch from "./useFetch";
 import { Link } from "react-router-dom";
 
 const MovieDetails = () => {
   const { id } = useParams();
   const { data: movie, error, isPending } = useFetch('http://localhost:8000/movies/' + id);
+
+  const history = useHistory();
+
+  const handleClick = () => {
+    fetch('http://localhost:8000/movies/' + movie.id, {
+      method: 'DELETE'
+    }).then(() => {
+      history.push('/');
+    })
+  }
 
   return (
     <div>
@@ -38,8 +48,8 @@ const MovieDetails = () => {
               </div>
             </div>
             <div className="MovieDetailsButtons">
-              <span>Delete</span>
-              <span>Edit</span>
+              <button onclick={handleClick}>Delete</button>
+              <button>Edit</button>
               <Link style={{color: "#c0146c"}} to="/">Close</Link>
             </div>
           </div>

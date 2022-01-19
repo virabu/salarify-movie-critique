@@ -7,6 +7,7 @@ const MovieList = ({movies}) => {
         <div className="MovieListCard" key={movie.id}>
           <Link to={`/movies/${movie.id}`}>
             <img className="image" src={ movie.imgUrl } alt="moviePic"/>
+            <div className="image2"></div>
             <div className="MovieListCardInfoDiv">
               <p>{ movie.name }</p>
               <div className="MovieListCardBottomDiv">

@@ -189,6 +189,44 @@
         "screenplay": "5"
       },
       "id": 10
+    },
+    {
+      "name": "Halálos",
+      "year": "2001",
+      "director": "valaki",
+      "stars": "others",
+      "writers": "Pisti",
+      "imgUrl": "https://s.24.hu/app/uploads/2021/03/fast-8-crew-cover-1024x576-1.jpg",
+      "review": "halálos",
+      "ratings": {
+        "directing": "2",
+        "acting": "2",
+        "costumeDesign": "2",
+        "editing": "2",
+        "music": "2",
+        "visualEffects": "2",
+        "screenplay": "2"
+      },
+      "id": 11
+    },
+    {
+      "name": "Halálos9",
+      "year": "2021",
+      "director": "tzrezr",
+      "stars": "fgedfef",
+      "writers": "fefe",
+      "imgUrl": "https://media.port.hu/images/001/361/188.jpg",
+      "review": "fefef",
+      "ratings": {
+        "directing": "1",
+        "acting": "1",
+        "costumeDesign": "1",
+        "editing": "2",
+        "music": "2",
+        "visualEffects": "1",
+        "screenplay": "1"
+      },
+      "id": 12
     }
   ]
 }

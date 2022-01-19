@@ -77,6 +77,7 @@ a {
 
 .image {
   max-width: 300px;
+  min-height: 200px;
 }
 
 .MovieListCardInfoDiv {
@@ -92,6 +93,11 @@ a {
 .MovieListCardBottomDiv {
   display: flex;
   justify-content: space-between;
+}
+
+.MovieDetails {
+  min-width: 600px;
+  width: 100%;
 }
 
 .MovieDetailsImage {
@@ -154,7 +160,11 @@ a {
   margin-top: 20px;
 }
 
-.MovieDetailsButtons > span {
+.MovieDetailsButtons > button {
   margin: 0 20px;
   cursor: pointer;
+  background-color: white;
+  border: none;
+  color: grey;
+  font-size: 16px;
 }
