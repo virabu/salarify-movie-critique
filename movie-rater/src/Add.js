@@ -4,26 +4,26 @@ import './Add.css';
 import { Link } from "react-router-dom";
 
 const Add = () => {
-  const [title, setTitle] = useState('');
+  const [name, setName] = useState('');
   const [year, setYear] = useState('');
   const [director, setDirector] = useState('');
   const [stars, setStars] = useState('');
   const [writers, setWriters] = useState('');
-  const [imageUrl, setImageUrl] = useState('');
+  const [imgUrl, setImgUrl] = useState('');
   const [review, setReview] = useState('');
-  const [ratDirecting, setRatDirecting] = useState('');
-  const [ratActing, setRatActing] = useState('');
-  const [ratCostume, setRatCostume] = useState('');
-  const [ratEditing, setRatEditing] = useState('');
-  const [ratMusic, setRatMusic] = useState('');
-  const [ratVisual, setRatVisual] = useState('');
-  const [ratScreenplay, setRatScreenplay] = useState('');
+  const [directing, setDirecting] = useState('');
+  const [acting, setActing] = useState('');
+  const [costumeDesign, setCostumeDesign] = useState('');
+  const [editing, setEditing] = useState('');
+  const [music, setMusic] = useState('');
+  const [visualEffects, setVisualEffects] = useState('');
+  const [screenplay, setScreenplay] = useState('');
   const [isPending, setIsPending] = useState(false);
   const history = useHistory();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const movie = { title, year, director, stars, writers, imageUrl, review, ratDirecting,  ratActing, ratCostume, ratEditing, ratMusic, ratVisual, ratScreenplay };
+    const movie = { name, year, director, stars, writers, imgUrl, review, directing,  acting, costumeDesign, editing, music, visualEffects, screenplay };
 
     setIsPending(true);
 
@@ -44,17 +44,17 @@ const Add = () => {
       <form onSubmit={handleSubmit}>
         <div className="inlineDiv">
           <div className="blockDiv">
-            <label for="title">Title</label><br/>
-            <input style={{width: "280px"}} type="text" 
-            id="title"
+            <label for="name">Title</label><br/>
+            <input style={{width: "280px", height: "30px"}} type="text" 
+            id="name"
             required
-            value={title}
+            value={name}
             placeholder="eg.: One Hundred and One Dalmatians"
-            onChange={(e) => setTitle(e.target.value)}
+            onChange={(e) => setName(e.target.value)}
             />
 
             <label for="director">Director</label><br/>
-            <input style={{width: "280px"}} type="text" 
+            <input style={{width: "280px", height: "30px"}} type="text" 
             id="director"
             required
             value={director}
@@ -63,7 +63,7 @@ const Add = () => {
             />
 
             <label for="writers">Writers</label><br/>
-            <input style={{width: "280px"}} type="text" 
+            <input style={{width: "280px", height: "30px"}} type="text" 
             id="writers"
             required
             value={writers}
@@ -74,7 +74,7 @@ const Add = () => {
           </div>
           <div className="blockDiv">
             <label for="year">Year</label><br/>
-            <input style={{width: "280px"}} type="number" 
+            <input style={{width: "280px", height: "30px"}} type="number" 
             id="year"
             required
             value={year}
@@ -83,7 +83,7 @@ const Add = () => {
             />
 
             <label for="stars">Stars</label><br/>
-            <input style={{width: "280px"}} type="text" 
+            <input style={{width: "280px", height: "30px"}} type="text" 
             id="stars"
             required
             value={stars}
@@ -91,19 +91,19 @@ const Add = () => {
             onChange={(e) => setStars(e.target.value)}
             />
 
-            <label for="imageUrl">Image URL</label><br/>
-            <input style={{width: "280px"}} type="url" 
-            id="imageUrl"
+            <label for="imgUrl">Image URL</label><br/>
+            <input style={{width: "280px", height: "30px"}} type="url" 
+            id="imgUrl"
             required
-            value={imageUrl}
+            value={imgUrl}
             placeholder="eg.: https://thedisinsider.com/101-dalmatians.png"
-            onChange={(e) => setImageUrl(e.target.value)}
+            onChange={(e) => setImgUrl(e.target.value)}
             />
           </div>
         </div>
 
-        <br/><label for="review">Review</label><br/>
-        <input style={{width: "600px", height: "60px"}} type="text" 
+        <label for="review">Review</label><br/>
+        <input style={{width: "600px", paddingTop: "40px", paddingBottom: "10px"}} type="text" 
         id="review"
         required
         value={review}
@@ -113,22 +113,81 @@ const Add = () => {
 
         <div className="ratingsDiv">
           <label>Ratings</label><br/>
-
-          <label>Directing</label>
-          <label>Acting</label>
-          <label>Costume design</label>
-          <label>Editing</label>
-          <label>Music</label>
-          <label>Visual effects</label>
-          <label>Screenplay</label>
+      
+          <table>
+            <tr>
+              <th></th>
+              <th>1</th>
+              <th>2</th>
+              <th>3</th>
+              <th>4</th>
+              <th>5</th>
+            </tr>
+            <tr>
+              <th><label for="directing">Directing </label></th>
+              <td><input type="radio" id="directing" name="directing" value="1"/></td>
+              <td><input type="radio" id="directing" name="directing" value="2"/></td>
+              <td><input type="radio" id="directing" name="directing" value="3"/></td>
+              <td><input type="radio" id="directing" name="directing" value="4"/></td>
+              <td><input type="radio" id="directing" name="directing" value="5" onChange={(e) => setDirecting(e.target.value)}/></td>
+            </tr>
+            <tr>
+              <th><label for="acting">Acting </label></th>
+              <td><input type="radio" id="acting" name="acting" value="1"/></td>
+              <td><input type="radio" id="acting" name="acting" value="2"/></td>
+              <td><input type="radio" id="acting" name="acting" value="3"/></td>
+              <td><input type="radio" id="acting" name="acting" value="4"/></td>
+              <td><input type="radio" id="acting" name="acting" value="5" onChange={(e) => setActing(e.target.value)}/></td>
+            </tr>
+            <tr>
+              <th><label for="costumeDesign">Costume design </label></th>
+              <td><input type="radio" id="costumeDesign" name="costumeDesign" value="1"/></td>
+              <td><input type="radio" id="costumeDesign" name="costumeDesign" value="2"/></td>
+              <td><input type="radio" id="costumeDesign" name="costumeDesign" value="3"/></td>
+              <td><input type="radio" id="costumeDesign" name="costumeDesign" value="4"/></td>
+              <td><input type="radio" id="costumeDesign" name="costumeDesign" value="5" onChange={(e) => setCostumeDesign(e.target.value)}/></td>
+            </tr>
+            <tr>
+              <th><label for="editing">Editing </label></th>
+              <td><input type="radio" id="editing" name="editing" value="1"/></td>
+              <td><input type="radio" id="editing" name="editing" value="2"/></td>
+              <td><input type="radio" id="editing" name="editing" value="3"/></td>
+              <td><input type="radio" id="editing" name="editing" value="4"/></td>
+              <td><input type="radio" id="editing" name="editing" value="5" onChange={(e) => setEditing(e.target.value)}/></td>
+            </tr>
+            <tr>
+              <th><label for="music">Music </label></th>
+              <td><input type="radio" id="music" name="music" value="1"/></td>
+              <td><input type="radio" id="music" name="music" value="2"/></td>
+              <td><input type="radio" id="music" name="music" value="3"/></td>
+              <td><input type="radio" id="music" name="music" value="4"/></td>
+              <td><input type="radio" id="music" name="music" value="5" onChange={(e) => setMusic(e.target.value)}/><br/></td>
+            </tr>
+            <tr>
+              <th><label for="visualEffects">Visual effects </label></th>
+              <td><input type="radio" id="visualEffects" name="visualEffects" value="1"/></td>
+              <td><input type="radio" id="visualEffects" name="visualEffects" value="2"/></td>
+              <td><input type="radio" id="visualEffects" name="visualEffects" value="3"/></td>
+              <td><input type="radio" id="visualEffects" name="visualEffects" value="4"/></td>
+              <td><input type="radio" id="visualEffects" name="visualEffects" value="5" onChange={(e) => setVisualEffects(e.target.value)}/></td>
+            </tr>
+            <tr>
+              <th><label for="screenplay">Screenplay </label> </th>
+              <td><input type="radio" id="screenplay" name="screenplay" value="1"/></td>
+              <td><input type="radio" id="screenplay" name="screenplay" value="2"/></td>
+              <td><input type="radio" id="screenplay" name="screenplay" value="3"/></td>
+              <td><input type="radio" id="screenplay" name="screenplay" value="4"/></td>
+              <td><input type="radio" id="screenplay" name="screenplay" value="5" onChange={(e) => setScreenplay(e.target.value)}/></td>
+            </tr>
+          </table>
         </div>
         <div className="addReviewButtonsDiv">
           <Link to="/">Cancel</Link>
-          <span>Add</span>
+          { !isPending && <span>Add</span> }
+          { isPending && <span>Adding...</span> }
         </div>
       </form>
     </div>
-    
   )
 }
 
