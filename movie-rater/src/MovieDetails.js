@@ -34,7 +34,7 @@ const MovieDetails = () => {
                 </div>
               <div className="MovieDetailsOverallScoreCont">
                 <h3>Overall score: </h3>
-                <p>{ Math.floor((movie.ratings.directing + movie.ratings.acting + movie.ratings.costumeDesign + movie.ratings.editing + movie.ratings.music + movie.ratings.visualEffects + movie.ratings.screenplay)/7) }</p>
+                <p>{ Math.floor((parseInt(movie.ratings.directing) + parseInt(movie.ratings.acting) + parseInt(movie.ratings.costumeDesign) + parseInt(movie.ratings.editing) + parseInt(movie.ratings.music) + parseInt(movie.ratings.visualEffects) + parseInt(movie.ratings.screenplay))/7 )}</p>
               </div>
             </div>
             <div className="MovieDetailsButtons">

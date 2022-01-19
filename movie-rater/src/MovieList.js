@@ -11,7 +11,7 @@ const MovieList = ({movies}) => {
               <p>{ movie.name }</p>
               <div className="MovieListCardBottomDiv">
                 <p>{ movie.year }</p>
-                <p><i class="far fa-star"></i> { Math.floor((movie.ratings.directing + movie.ratings.acting + movie.ratings.costumeDesign + movie.ratings.editing + movie.ratings.music + movie.ratings.visualEffects + movie.ratings.screenplay)/7 )}</p>
+                <p><i class="far fa-star"></i> { Math.floor((parseInt(movie.ratings.directing) + parseInt(movie.ratings.acting) + parseInt(movie.ratings.costumeDesign) + parseInt(movie.ratings.editing) + parseInt(movie.ratings.music) + parseInt(movie.ratings.visualEffects) + parseInt(movie.ratings.screenplay))/7 )}</p>
               </div>
             </div>
           </Link>
