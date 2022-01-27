@@ -125,7 +125,7 @@ const Add = () => {
             </tr>
             <tr>
               <th><label for="directing">Directing </label></th>
-              <td><input type="radio" id="directing" name="directing" value={1} onChange={handleChange}/></td>
+              <td><input type="radio" id="directing" name="directing" value={1} onChange={handleChange} required/></td>
               <td><input type="radio" id="directing" name="directing" value={2} onChange={handleChange}/></td>
               <td><input type="radio" id="directing" name="directing" value={3} onChange={handleChange}/></td>
               <td><input type="radio" id="directing" name="directing" value={4} onChange={handleChange}/></td>
@@ -133,7 +133,7 @@ const Add = () => {
             </tr>
             <tr>
               <th><label for="acting">Acting </label></th>
-              <td><input type="radio" id="acting" name="acting" value={1} onChange={handleChange}/></td>
+              <td><input type="radio" id="acting" name="acting" value={1} onChange={handleChange} required/></td>
               <td><input type="radio" id="acting" name="acting" value={2} onChange={handleChange}/></td>
               <td><input type="radio" id="acting" name="acting" value={3} onChange={handleChange}/></td>
               <td><input type="radio" id="acting" name="acting" value={4} onChange={handleChange}/></td>
@@ -141,7 +141,7 @@ const Add = () => {
             </tr>
             <tr>
               <th><label for="costumeDesign">Costume design </label></th>
-              <td><input type="radio" id="costumeDesign" name="costumeDesign" value="1" onChange={handleChange}/></td>
+              <td><input type="radio" id="costumeDesign" name="costumeDesign" value="1" onChange={handleChange} required/></td>
               <td><input type="radio" id="costumeDesign" name="costumeDesign" value="2" onChange={handleChange}/></td>
               <td><input type="radio" id="costumeDesign" name="costumeDesign" value="3" onChange={handleChange}/></td>
               <td><input type="radio" id="costumeDesign" name="costumeDesign" value="4" onChange={handleChange}/></td>
@@ -149,7 +149,7 @@ const Add = () => {
             </tr>
             <tr>
               <th><label for="editing">Editing </label></th>
-              <td><input type="radio" id="editing" name="editing" value="1" onChange={handleChange}/></td>
+              <td><input type="radio" id="editing" name="editing" value="1" onChange={handleChange} required/></td>
               <td><input type="radio" id="editing" name="editing" value="2" onChange={handleChange}/></td>
               <td><input type="radio" id="editing" name="editing" value="3" onChange={handleChange}/></td>
               <td><input type="radio" id="editing" name="editing" value="4" onChange={handleChange}/></td>
@@ -157,7 +157,7 @@ const Add = () => {
             </tr>
             <tr>
               <th><label for="music">Music </label></th>
-              <td><input type="radio" id="music" name="music" value="1" onChange={handleChange}/></td>
+              <td><input type="radio" id="music" name="music" value="1" onChange={handleChange} required/></td>
               <td><input type="radio" id="music" name="music" value="2" onChange={handleChange}/></td>
               <td><input type="radio" id="music" name="music" value="3" onChange={handleChange}/></td>
               <td><input type="radio" id="music" name="music" value="4" onChange={handleChange}/></td>
@@ -165,7 +165,7 @@ const Add = () => {
             </tr>
             <tr>
               <th><label for="visualEffects">Visual effects </label></th>
-              <td><input type="radio" id="visualEffects" name="visualEffects" value="1" onChange={handleChange}/></td>
+              <td><input type="radio" id="visualEffects" name="visualEffects" value="1" onChange={handleChange} required/></td>
               <td><input type="radio" id="visualEffects" name="visualEffects" value="2" onChange={handleChange}/></td>
               <td><input type="radio" id="visualEffects" name="visualEffects" value="3" onChange={handleChange}/></td>
               <td><input type="radio" id="visualEffects" name="visualEffects" value="4" onChange={handleChange}/></td>
@@ -173,7 +173,7 @@ const Add = () => {
             </tr>
             <tr>
               <th><label for="screenplay">Screenplay </label> </th>
-              <td><input type="radio" id="screenplay" name="screenplay" value="1" onChange={handleChange}/></td>
+              <td><input type="radio" id="screenplay" name="screenplay" value="1" onChange={handleChange} required/></td>
               <td><input type="radio" id="screenplay" name="screenplay" value="2" onChange={handleChange}/></td>
               <td><input type="radio" id="screenplay" name="screenplay" value="3" onChange={handleChange}/></td>
               <td><input type="radio" id="screenplay" name="screenplay" value="4" onChange={handleChange}/></td>

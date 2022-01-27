@@ -8,7 +8,7 @@ const MovieDetails = () => {
 
   const history = useHistory();
 
-  const handleClick = () => {
+  const handleClickDelete = () => {
     fetch('http://localhost:8000/movies/' + movie.id, {
       method: 'DELETE'
     }).then(() => {
@@ -48,8 +48,8 @@ const MovieDetails = () => {
               </div>
             </div>
             <div className="MovieDetailsButtons">
-              <button onClick={handleClick}>Delete</button>
-              <button>Edit</button>
+              <button onClick={handleClickDelete}>Delete</button>
+              <Link to={`/edit/${movie.id}`}>Edit</Link>
               <Link style={{color: "#c0146c"}} to="/">Close</Link>
             </div>
           </div>

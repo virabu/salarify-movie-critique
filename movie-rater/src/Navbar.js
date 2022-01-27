@@ -9,7 +9,9 @@ const Navbar = () => {
         <Link to="/add">Add</Link>
       </div>
       <div className="search">
-        <input type="text" placeholder="Search"></input>
+        <input type="text" placeholder="Search">
+          
+        </input>
         <button>Search</button>
       </div>
     </nav>

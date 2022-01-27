@@ -54,9 +54,9 @@ input {
   color: grey;
 }
 
-.addReviewButtonsDiv > button {
-  color: #c0146c;
-  margin-left: 30px;
+.addReviewButtonsDiv > button, .MovieDetailsButtons > a {
+  color: grey;
+  margin-left: 10px;
   cursor: pointer;
   background-color: white;
   border: none;
